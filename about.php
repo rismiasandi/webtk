@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>Sejarah</title>
+   
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -33,6 +34,7 @@
 <body>
 
     <div class="brand">SEJARAH TK MELATI</div>
+     <div class="address-bar">Desa Kebonsari | Kecamatan Sumbersari | Kabupaten Jember</div>
     
 
     <!-- Navigation -->

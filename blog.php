@@ -33,6 +33,7 @@
 <body>
 
     <div class="brand">STRUKTUR GURU TK MELATI</div>
+    <div class="address-bar">Desa Kebonsari | Kecamatan Sumbersari | Kabupaten Jember</div>
     
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
