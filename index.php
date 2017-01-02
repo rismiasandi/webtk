@@ -58,7 +58,7 @@ include("koneksi.php");
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.php">HOME</a>
+                        <a href="index.php">HOME lagie</a>
                     </li>
                     <li>
                         <a href="about.php">SEJARAH</a>
