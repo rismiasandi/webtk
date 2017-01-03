@@ -128,15 +128,16 @@ include("koneksi.php");
                         <a href="https://www.facebook.com/profile.php?id=100008276895381"><img src="img/icon_fb.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="sofiyanidewi08@gmail.com"><img src="img/icon_email.png" alt=""></a>
+                        <a href="https://mail.google.com/mail/#inbox"><img src="img/icon_email.png" alt=""></a>
                     </li>
                     <li>
-                        <a href="blog.php">STRUKTUR GURU</a>
+                        <a href="http://www.shitlicious.com/"><img src="img/icon_blog.png" alt=""></a>
                     </li>
-                    <li>
-                        <a href="contact.php?page=lihat_siswa">DATA SISWA</a>
-                    </li>
+                    
                 </ul>
+				<h3 class="brand-before text-center">
+                        <small>Copyright@2017 TK MELATI</small>
+                    </h3>
             </div>
             <!-- /.navbar-collapse -->
         </div>
