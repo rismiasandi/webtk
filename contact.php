@@ -85,16 +85,18 @@ include("koneksi.php");
                     <h2 class="intro-text text-center">Data Siswa
 					<hr>
                     </h2>
-					            <div id="site_content">
-      <div id="content">
-        <!-- insert the page content here -->
-        <?php getPage($_REQUEST['page']); ?>
-        
-      </div>
+			<div id="site_content">
+				<div id="content">
+				<!-- insert the page content here -->
+				<?php getPage($_REQUEST['page']); ?>
+				</div>
+			</div>
+				</div>
+			</div>
+		</div>
     </div>
                     
-                </div>
-				<nav class="navbar navbar-default" role="navigation">
+	<nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             
