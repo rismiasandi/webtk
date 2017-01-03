@@ -116,6 +116,32 @@ include("koneksi.php");
                 </div>
             </div>
         </div>
+		
+	<nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100008276895381"><img src="img/icon_fb.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="sofiyanidewi08@gmail.com"><img src="img/icon_email.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="blog.php">STRUKTUR GURU</a>
+                    </li>
+                    <li>
+                        <a href="contact.php?page=lihat_siswa">DATA SISWA</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
        
 
