@@ -6,6 +6,13 @@
 </head>
 
 <body>
+    <script>
+		window.load = print_d();
+		function print_d(){
+			window.print();
+		}
+	</script>
+
 <table width="941" height="279" border="0">
   <tr>
     <td width="254" rowspan="3"><center><img src="img/logofix.jpg"  width="100" height="100" /></center></td>
