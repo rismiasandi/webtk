@@ -14,7 +14,7 @@ include("koneksi.php");
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Rumah</title>
+    <title>Home</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -116,33 +116,6 @@ include("koneksi.php");
                 </div>
             </div>
         </div>
-		
-	<nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="https://www.facebook.com/profile.php?id=100008276895381"><img src="img/icon_fb.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="https://mail.google.com/mail/#inbox"><img src="img/icon_email.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="http://www.shitlicious.com/"><img src="img/icon_blog.png" alt=""></a>
-                    </li>
-                    
-                </ul>
-				<h3 class="brand-before text-center">
-                        <small>Copyright@2017 TK MELATI</small>
-                    </h3>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
 
        
 
