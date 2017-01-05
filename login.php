@@ -1,5 +1,5 @@
-<?php session_start(); 
-		
+<?php
+@session_start(); 
 	if(isset($_POST['Submit'])){
 		
 		$logins = array('Habibi' => '123456','username' => 'password','username2' => 'password2');
