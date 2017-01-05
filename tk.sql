@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 01, 2017 at 05:38 PM
+-- Generation Time: Jan 05, 2017 at 05:58 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -38,6 +38,20 @@ CREATE TABLE IF NOT EXISTS `admin` (
 
 INSERT INTO `admin` (`Id_Admin`, `Password`) VALUES
 ('K00', 'Kepsek');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `gambar`
+--
+
+CREATE TABLE IF NOT EXISTS `gambar` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nama` varchar(100) NOT NULL,
+  `ukuran` int(11) NOT NULL,
+  `tipe` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -131,7 +145,38 @@ INSERT INTO `siswa` (`No_induk`, `Nama`, `Jkel`, `TTL`, `alamat`, `Nama_ortu`, `
 ('0048', 'Linda Fiya', 'P', 'Jember 06-01-2012', 'Jl Sumatra 78 Jember', 'Budiawan', 'B1'),
 ('0049', 'Sri Handayano', 'P', 'Jember 17-07-2012', 'Jl Bangka 83 Jember', 'Nanang Purwanto', ''),
 ('0050', 'Cinta Tamara2', 'P', 'Jember 2-08-2012', 'Jl Hayamuruk 87 Jember', 'Wahyudin', 'B1'),
-('049', 'rewer', 'P', 'sdffds', 'dfsdf', 'sffds', 'A1');
+('049', 'rewer', 'P', 'sdffds', 'dfsdf', 'sffds', 'A1'),
+('fgdg', 'dfgdfg', 'd', 'dfg', 'dgdg', 'dfgdg', 'A1'),
+('kjfjd', 'jbjkbjkbj', 'k', 'llknknl', 'nlknklnl', 'lnlnll', 'A1');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_biodata`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_biodata` (
+  `No_induk` char(5) NOT NULL,
+  `Nama` varchar(19) NOT NULL,
+  `Jkel` varchar(1) NOT NULL,
+  `TTL` char(30) NOT NULL,
+  `alamat` char(40) NOT NULL,
+  `Nama_ortu` varchar(15) NOT NULL,
+  `id_kelas` char(10) NOT NULL,
+  `photo` varchar(100) NOT NULL,
+  `ukuran` int(12) NOT NULL,
+  `type` varchar(100) NOT NULL,
+  PRIMARY KEY (`No_induk`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_biodata`
+--
+
+INSERT INTO `tbl_biodata` (`No_induk`, `Nama`, `Jkel`, `TTL`, `alamat`, `Nama_ortu`, `id_kelas`, `photo`, `ukuran`, `type`) VALUES
+('001', 'tulip', ',', ',b,b,b', ',mbm,b,mb', ',b,mb,', 'Nol kecil', '01.04.17-Tulips.jpg', 620888, 'image/jpeg'),
+('09000', 'khkjh', 'k', 'jhjkhkj', 'jhkjhk', 'hjhjhk', 'Nol kecil', '01.05.17-0bfc61e01a9ee0bbea66a7a02eb8912c.jpg', 1518, 'image/jpeg'),
+('89000', 'lhlhlj', 'j', 'ljhljh', 'ljhjlh', 'ljhjhl', 'Nol kecil', '160355-Hydrangeas.jpg', 595284, 'image/jpeg');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

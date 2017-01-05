@@ -147,7 +147,7 @@ $type=$row['type'];
     <tr>
       <td><input type="submit" name="submit"  value="Update" onClick="return confirm('Apakah Anda yakin akan mengubah data?')"/></td>
       <td> </td>
-   <td><a href="view_data.php"><strong>[View Biodata]</strong></a></td>
+   <td><a href="contact.php?page=lihat_siswa"><strong>[View Biodata]</strong></a></td>
  </tr>
     </table>
    
