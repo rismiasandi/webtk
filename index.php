@@ -124,7 +124,7 @@ include("koneksi.php");
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="https://www.facebook.com/profile.php?id=100008276895381"><img src="img/icon_fb.png" alt=""></a>
+                        <a href="https://www.facebook.com/profile.php?id=100014833629737"><img src="img/icon_fb.png" alt=""></a>
                     </li>
                     <li>
                         <a href="https://mail.google.com/mail/#inbox"><img src="img/icon_email.png" alt=""></a>
