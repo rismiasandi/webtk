@@ -14,14 +14,13 @@ include("koneksi.php");
     <meta name="description" content="">
     <meta name="author" content="">
 
-<<<<<<< HEAD
+
 
     <title>HOMIES</title>
 
     <title>Home</title>
-=======
+
     <title>Rumah</title>
->>>>>>> b94d988504a878941aaa743575aff9333bd738c7
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
