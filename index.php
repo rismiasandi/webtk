@@ -116,8 +116,9 @@ include("koneksi.php");
                         </a>
                     </div>
                     <h2 class="brand-before">
+<marquee direction=”left”>
                         <small>Selamat Datang di TK MELATI</small>
-                    </h2>
+                    </h2></marquee>
                     
                     
                 </div>
