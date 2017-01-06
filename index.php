@@ -14,6 +14,12 @@ include("koneksi.php");
     <meta name="description" content="">
     <meta name="author" content="">
 
+
+
+    <title>HOMIES</title>
+
+    <title>Home</title>
+
     <title>Rumah</title>
 
     <!-- Bootstrap Core CSS -->
@@ -64,7 +70,7 @@ include("koneksi.php");
                         <a href="about.php">SEJARAH</a>
                     </li>
                     <li>
-                        <a href="blog.php">STRUKTUR GURU</a>
+                        <a href="blog.php">STRUKTUR PENGAJAR</a>
                     </li>
                     <li>
                         <a href="contact.php?page=lihat_siswa">DATA SISWA</a>
@@ -109,8 +115,9 @@ include("koneksi.php");
                         </a>
                     </div>
                     <h2 class="brand-before">
+<marquee direction=”left”>
                         <small>Selamat Datang di TK MELATI</small>
-                    </h2>
+                    </h2></marquee>
                     
                     
                 </div>
