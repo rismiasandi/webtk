@@ -13,6 +13,12 @@
 		}
 	</script>
 
+	<?php
+include "koneksi.php";
+$query=mysql_query("select * from tbl_biodata");
+?>
+
+	
 <table width="941" height="279" border="0">
   <tr>
     <td width="254" rowspan="3"><center><img src="img/logofix.jpg"  width="100" height="100" /></center></td>
@@ -31,74 +37,40 @@
 	  
 	  <table cellpadding="5" cellspacing="0" border="1" align="center">
 	
-		<tr bgcolor="#CCCCCC"> 
-			<th><font color="black">No.</font></th>
-			<th><font color="black">Nomor Induk</font></th>
-			<th><font color="black">Nama Lengkap</font></th>
-			<th><font color="black">Jenis Kelamin</font></th>
-			<th><font color="black">Tempat Tanggal Lahir</font></th>
-			<th><font color="black">Alamat</font></th>
-			<th><font color="black">Nama Orang tua</font></th>
-			<th><font color="black">Kelas</font></th>
-		</tr>
+		<tr bgcolor="#999">
+  <td height="30" align="center" style="border-bottom:solid 1px #000000; border-right:solid 1px #000000; border-top:solid 1px #000000; border-left:solid 1px #000000;"><strong>No</strong></td>
+  <td align="center" style="border-bottom:solid 1px #000000; border-right:solid 1px #000000; border-top:solid 1px #000000;"><strong>Photo</strong></td>
+  <td align="center" style="border-bottom:solid 1px #000000; border-right:solid 1px #000000; border-top:solid 1px #000000;"><strong>No_induk</strong></td>
+  <td align="center" style="border-bottom:solid 1px #000000; border-right:solid 1px #000000; border-top:solid 1px #000000;"><strong>Nama</strong></td>
+  <td align="center" style="border-bottom:solid 1px #000000; border-right:solid 1px #000000; border-top:solid 1px #000000;"><strong>Jkel</strong></td>
+  <td align="center" style="border-bottom:solid 1px #000000; border-right:solid 1px #000000; border-top:solid 1px #000000;"><strong>TTL</strong></td>
+  <td align="center" style="border-bottom:solid 1px #000000; border-right:solid 1px #000000; border-top:solid 1px #000000;"><strong>alamat</strong></td>
+  <td align="center" style="border-bottom:solid 1px #000000; border-right:solid 1px #000000; border-top:solid 1px #000000;"><strong>Nama_ortu</strong></td>
+  <td align="center" style="border-bottom:solid 1px #000000; border-right:solid 1px #000000; border-top:solid 1px #000000;"><strong>id_kelas</strong></td>
+</tr>
 		
 		<?php
-		//iclude file koneksi ke database
-		include('koneksi.php');
-		
-		if (isset($_POST['bcari'])) { 
-		$tcari = $_POST['tcari'];
-		$kategori=$_POST['kategori'];
-		
-		$query = mysql_query("SELECT siswa.no_induk , siswa.Nama, siswa.Jkel , siswa.TTL , siswa.alamat,siswa.Nama_ortu,siswa.id_kelas,kelas.id_kelas,kelas.Nama_kelas from siswa
-                 inner join kelas using (id_kelas) 
-				 where $kategori LIKE '%$tcari%'
-				 ORDER BY no_induk") or die(mysql_error());
-		}else{
+$no = 0;
+while($row=mysql_fetch_array($query)){
+ ?>
+ <tr>
+  <td align="center" style="border-bottom:solid 1px #000000; border-right:solid 1px #000000; border-left:solid 1px #000000;"><?php echo $no=$no+1;?></td>
+  <td style="border-bottom:solid 1px #000000; border-right:solid 1px #000000;"><a href="./photo/<?php echo $row['photo'];?>" target="_blank"><img src="./photo/<?php echo $row['photo'];?>" width="100" height="100" title="<?php echo $row['photo'];?>"></a></td>
+  <td style="border-bottom:solid 1px #000000; border-right:solid 1px #000000;"><?php echo ucwords($row['No_induk']);?></td>
+  <td style="border-bottom:solid 1px #000000; border-right:solid 1px #000000;"><?php echo ucwords($row['Nama']);?></td>
+  <td style="border-bottom:solid 1px #000000; border-right:solid 1px #000000;"><?php echo $row['Jkel'];?></td>
+  <td style="border-bottom:solid 1px #000000; border-right:solid 1px #000000;"><?php echo $row['TTL'];?></td>
+  <td style="border-bottom:solid 1px #000000; border-right:solid 1px #000000;"><?php echo $row['alamat'];?></td>
+  <td style="border-bottom:solid 1px #000000; border-right:solid 1px #000000;"><?php echo $row['Nama_ortu'];?></td>
+  <td style="border-bottom:solid 1px #000000; border-right:solid 1px #000000;"><?php echo $row['id_kelas'];?></td>
 
-		//query ke database dg SELECT table siswa diurutkan berdasarkan NIS paling besar
-		$query = mysql_query("SELECT siswa.no_induk , siswa.Nama, siswa.Jkel , siswa.TTL , siswa.alamat,siswa.Nama_ortu,siswa.id_kelas,kelas.id_kelas,kelas.nama_kelas from siswa
-				 inner join kelas using (id_kelas) 
-                 ORDER BY no_induk
-") or die(mysql_error()); }
-		
-		//cek, apakakah hasil query di atas mendapatkan hasil atau tidak (data kosong atau tidak)
-		if(mysql_num_rows($query) == 0){	//ini artinya jika data hasil query di atas kosong
+  </td>
+ </tr>
 			
-			//jika data kosong, maka akan menampilkan row kosong
-			echo '<tr><td colspan="6">Tidak ada data!</td></tr>';
-			
-		}else{	//else ini artinya jika data hasil query ada (data diu database tidak kosong)
-			
-			//jika data tidak kosong, maka akan melakukan perulangan while
-			$no = 1;	//membuat variabel $no untuk membuat nomor urut
-			while($data = mysql_fetch_assoc($query)){	//perulangan while dg membuat variabel $data yang akan mengambil data di database
-				
-				//menampilkan row dengan data di database
-				echo '<tr>';
-					echo '<td>'.$no.'</td>';	//menampilkan nomor urut
-					echo '<td>'.$data['no_induk'].'</td>';	//menampilkan data nis dari database
-					echo '<td>'.$data['Nama'].'</td>';	//menampilkan data nama lengkap dari database
-					echo '<td>'.$data['Jkel'].'</td>';	//menampilkan data kelas dari database
-					echo '<td>'.$data['TTL'].'</td>';	//menampilkan data jurusan dari database
-					echo '<td>'.$data['alamat'].'</td>';	//menampilkan data jurusan dari database
-					echo '<td>'.$data['Nama_ortu'].'</td>';	//menampilkan data jurusan dari database
-					echo '<td>'.$data['id_kelas'].'</td>';	//menampilkan data jurusan dari database
-					//disini hanya utuk melihat ..................................................................   echo '<td><a href="?page=edit&id='.$data['mhs_id'].'">Edit</a> / <a href="?page=hapus&id='.$data['mhs_id'].'" onclick="return confirm(\'Yakin?\')">Hapus</a></td>';	//menampilkan link edit dan hapus dimana tiap link terdapat GET id -> ?id=siswa_id
-				echo '</tr>';
-				
-				$no++;	//menambah jumlah nomor urut setiap row
-				
-			}
-			
-		}
-		?>
-	</table>
-	  <br/>
-	  
-    </td>
-	</tr>
 	
+	<?php
+}
+?>
 </table>
 <h1>&nbsp;</h1>
 </body>
