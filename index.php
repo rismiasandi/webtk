@@ -14,11 +14,10 @@ include("koneksi.php");
     <meta name="description" content="">
     <meta name="author" content="">
 
-<<<<<<< HEAD
+
     <title>HOMIES</title>
-=======
+
     <title>Home</title>
->>>>>>> a5b168c45715f15ac31ea234eee9dc47a86aea11
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -68,7 +67,7 @@ include("koneksi.php");
                         <a href="about.php">SEJARAH</a>
                     </li>
                     <li>
-                        <a href="blog.php">STRUKTUR GURU</a>
+                        <a href="blog.php">STRUKTUR PENGAJAR</a>
                     </li>
                     <li>
                         <a href="contact.php?page=lihat_siswa">DATA SISWA</a>
