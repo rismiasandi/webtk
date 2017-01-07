@@ -98,17 +98,17 @@ if(isset($_POST['submit'])){
   <tr>
     <td>TTL</td>
     <td>:</td>
-    <td><input type="password" name="TTL" size="30"/></td>
+    <td><input type="text" name="TTL" size="30"/></td>
   </tr>
     <tr>
     <td>alamat</td>
     <td>:</td>
-    <td><input type="password" name="alamat" size="30"/></td>
+    <td><input type="text" name="alamat" size="30"/></td>
   </tr>
     <tr>
     <td>Nama_ortu</td>
     <td>:</td>
-    <td><input type="password" name="Nama_ortu" size="30"/></td>
+    <td><input type="text" name="Nama_ortu" size="30"/></td>
   </tr>
   <tr>
     <td>Kelas</td>
