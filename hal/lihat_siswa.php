@@ -25,11 +25,11 @@ include ('koneksi.php');
 
     
 	
-	<table cellpadding="5" cellspacing="0" border="1" align="center">
+	<table cellpadding="5" cellspacing="5" border="1" align="center">
 	
 		<tr bgcolor="#CCCCCC"> 
-			<th><font color="black">No.</font>
-			<th><font color="black">Foto</font>
+			<th><font color="black">No.</font></th>
+			<th><font color="black">Foto</font></th>
 			<th><font color="black">Nomor Induk</font></th>
 			<th><center><font color="black">Nama Lengkap</font><center></th>
 			<th><font color="black">Jenis Kelamin</font></th>
