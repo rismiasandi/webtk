@@ -30,7 +30,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>about - Business Casual - Start Bootstrap Theme</title>
+    <title>lOGIN</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
