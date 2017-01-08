@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Struktur Guru</title>
+    <title>Struktur Pengajar</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
 
 <body>
 
-    <div class="brand">STRUKTUR GURU TK MELATI</div>
+    <div class="brand">STRUKTUR PENGAJAR TK MELATI</div>
     <div class="address-bar">Desa Kebonsari | Kecamatan Sumbersari | Kabupaten Jember</div>
     
     <!-- Navigation -->
@@ -59,7 +59,7 @@
                         <a href="about.php">SEJARAH</a>
                     </li>
                     <li>
-                        <a href="blog.php">STRUKTUR GURU</a>
+                        <a href="blog.php">STRUKTUR PENGAJAR</a>
                     </li>
                     <li>
                         <a href="contact.php?page=lihat_siswa">DATA SISWA</a>
@@ -77,7 +77,7 @@
             <div class="box">
                 <div class="col-lg-12">
                     <hr>
-                    <h2 class="intro-text text-center">STRUKTUR GURU
+                    <h2 class="intro-text text-center">STRUKTUR PENGAJAR
                     </h2>
                     <hr>
                 </div>
