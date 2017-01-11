@@ -93,20 +93,29 @@
 					<p>TK Melati didirikan pada tahun 1946. Berdiri di atas tanah milik perusahaan yang berlokasi di Desa Kebonsari, Kec. Sumbersari, Jember dengan luas 2.500 m2. </p>
                     <p>Taman Kanak-kanak Melati atau nama ringkasnya TK Melati, merupakan sebuah Taman Kanak-kanak Swasta yang terletak di Jl. Melati, Jember, Jawa Timur.</p>
                     <p>Taman Kanak-kanak Melati memiliki kod NPSN 20112065. Pada 2016, TK Melati memiliki 15 pelajar lelaki dan 10 pelajar perempuan di kelas Nol Besar, 17 pelajar lelaki dan 8 pelajar perempuan di kelas Nol kecil, menjadikan jumlah keseluruhan murid seramai 50 orang</p>
-                </div>
-               
-       
-
-       
-               
+                </div>  <h2 class="brand-before">
+<marquee direction=�left�>
+                        <small> <strong> Selamat Datang di TK MELATI </strong> </small>
+                    </h2></marquee>
+            
                 <div class="clearfix"></div>
             </div>
+                  </div>
+ <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+                   
+                    
+                    
+                </div>
+            </div>
         </div>
-
-    </div>
-	
-	
-			<nav class="navbar navbar-default" role="navigation">
+					<nav class="navbar navbar-default" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             
