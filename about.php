@@ -58,7 +58,7 @@
                         <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="about.php">SEJARAH</a>
+                        <a href=#> <b> SEJARAH </b></a>
                     </li>
                     <li>
                         <a href="blog.php">STRUKTUR GURU</a>

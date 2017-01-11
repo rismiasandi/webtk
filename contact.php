@@ -68,7 +68,7 @@ include("koneksi.php");
                         <a href="blog.php">STRUKTUR GURU</a>
                     </li>
                     <li>
-                        <a href="contact.php?page=lihat_siswa">DATA SISWA</a>
+                        <a href=#><b> DATA SISWA </b></a>
                     </li>
                 </ul>
             </div>

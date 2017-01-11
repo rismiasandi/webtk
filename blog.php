@@ -59,7 +59,7 @@
                         <a href="about.php">SEJARAH</a>
                     </li>
                     <li>
-                        <a href="blog.php">STRUKTUR PENGAJAR</a>
+                        <a href=#><b>STRUKTUR PENGAJAR</b></a>
                     </li>
                     <li>
                         <a href="contact.php?page=lihat_siswa">DATA SISWA</a>
