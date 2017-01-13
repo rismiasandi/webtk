@@ -83,7 +83,9 @@
                 </div>
                 <div class="col-lg-12 text-center">
                     <img class="img-responsive img-border img-full" src="img/gambar1.jpg" alt="">
-                    
+                    <marquee direction=�left�>
+                        <strong> Selamat Datang di TK MELATI </strong> 
+                    </h2></marquee>
     <!-- /.container -->
 
     
