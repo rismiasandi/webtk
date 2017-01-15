@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 3.5.2.2
+-- version 3.4.5
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Jan 05, 2017 at 05:58 PM
--- Server version: 5.5.27
--- PHP Version: 5.4.7
+-- Host: localhost
+-- Waktu pembuatan: 15. Januari 2017 jam 14:27
+-- Versi Server: 5.5.16
+-- Versi PHP: 5.3.8
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -23,7 +23,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Struktur dari tabel `admin`
 --
 
 CREATE TABLE IF NOT EXISTS `admin` (
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `admin`
+-- Dumping data untuk tabel `admin`
 --
 
 INSERT INTO `admin` (`Id_Admin`, `Password`) VALUES
@@ -42,7 +42,7 @@ INSERT INTO `admin` (`Id_Admin`, `Password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `gambar`
+-- Struktur dari tabel `gambar`
 --
 
 CREATE TABLE IF NOT EXISTS `gambar` (
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `gambar` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kelas`
+-- Struktur dari tabel `kelas`
 --
 
 CREATE TABLE IF NOT EXISTS `kelas` (
@@ -66,7 +66,7 @@ CREATE TABLE IF NOT EXISTS `kelas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kelas`
+-- Dumping data untuk tabel `kelas`
 --
 
 INSERT INTO `kelas` (`id_kelas`, `Nama_kelas`) VALUES
@@ -76,7 +76,7 @@ INSERT INTO `kelas` (`id_kelas`, `Nama_kelas`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `siswa`
+-- Struktur dari tabel `siswa`
 --
 
 CREATE TABLE IF NOT EXISTS `siswa` (
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `siswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `siswa`
+-- Dumping data untuk tabel `siswa`
 --
 
 INSERT INTO `siswa` (`No_induk`, `Nama`, `Jkel`, `TTL`, `alamat`, `Nama_ortu`, `id_kelas`) VALUES
@@ -152,7 +152,7 @@ INSERT INTO `siswa` (`No_induk`, `Nama`, `Jkel`, `TTL`, `alamat`, `Nama_ortu`, `
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_biodata`
+-- Struktur dari tabel `tbl_biodata`
 --
 
 CREATE TABLE IF NOT EXISTS `tbl_biodata` (
@@ -170,13 +170,42 @@ CREATE TABLE IF NOT EXISTS `tbl_biodata` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tbl_biodata`
+-- Dumping data untuk tabel `tbl_biodata`
 --
 
 INSERT INTO `tbl_biodata` (`No_induk`, `Nama`, `Jkel`, `TTL`, `alamat`, `Nama_ortu`, `id_kelas`, `photo`, `ukuran`, `type`) VALUES
-('001', 'tulip', ',', ',b,b,b', ',mbm,b,mb', ',b,mb,', 'Nol kecil', '01.04.17-Tulips.jpg', 620888, 'image/jpeg'),
-('09000', 'khkjh', 'k', 'jhjkhkj', 'jhkjhk', 'hjhjhk', 'Nol kecil', '01.05.17-0bfc61e01a9ee0bbea66a7a02eb8912c.jpg', 1518, 'image/jpeg'),
-('89000', 'lhlhlj', 'j', 'ljhljh', 'ljhjlh', 'ljhjhl', 'Nol kecil', '160355-Hydrangeas.jpg', 595284, 'image/jpeg');
+('0002', 'Ridanti Permadi', 'P', 'Jember 15 Maret 2011', 'Jl Kenanga 102 Jember', 'Permadi', 'Nol kecil', '01.15.17-2.jpg', 106698, 'image/jpeg'),
+('0003', 'Arif Habibi', 'L', 'Jember 10 November 2011', 'Jl Hayam Muruk', 'Mayongga', 'Nol kecil', '01.15.17-11.jpg', 105267, 'image/jpeg'),
+('0004', 'Dewi Lestiari', 'P', 'Jember 08 Februari 2011', 'Jl Jawa 89 Jember', 'Hisyam ', 'Nol kecil', '01.15.17-3.jpg', 105489, 'image/jpeg'),
+('0005', 'Rismia Sandi', 'P', 'Jember 09 Maret 2011', 'Jl Kalimantan 78 Jember', 'Samsul Arifin', 'Nol kecil', '01.15.17-5.jpg', 113308, 'image/jpeg'),
+('0006', 'Zulia Imawati', 'P', 'Jember 12 Januari 2012', 'Jl Keramat 67 Jember', 'Saryo', 'Nol kecil', '01.15.17-7.jpg', 106333, 'image/jpeg'),
+('0007', 'Lani Indah', 'P', 'Jember 08 Juli 2011', 'Jl Jawa 45 Jember', 'Miski', 'Nol kecil', '01.15.17-10.jpg', 108694, 'image/jpeg'),
+('0008', 'Dita Ulfi', 'P', 'Jember 10 Mei 2011', 'Jl Kalimantan 18 Jember', 'Slamet', 'Nol kecil', '01.15.17-9.jpg', 110408, 'image/jpeg'),
+('0009', 'Elma Maulani', 'P', 'Jember 19 Juli 2011', 'Jl Hayam Muruk 90 Jember', 'Samsul Muhammad', 'Nol kecil', '01.15.17-42.jpg', 107920, 'image/jpeg'),
+('001', 'Fina Darius', 'P', 'Jember, 14 Mei 2011', 'Jl Panjaitan 102 Jember', 'Rizki Tinus', 'Nol kecil', '01.15.17-1.jpg', 118081, 'image/jpeg'),
+('0010', 'Sisilia Utami', 'P', 'Jember 10 Juni 2011', 'Jl Panjaitan 17 Jember', 'Gunawan', 'Nol kecil', '01.15.17-45.jpg', 107751, 'image/jpeg');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `userId` int(11) NOT NULL AUTO_INCREMENT,
+  `userName` varchar(30) NOT NULL,
+  `userEmail` varchar(60) NOT NULL,
+  `userPass` varchar(255) NOT NULL,
+  PRIMARY KEY (`userId`),
+  UNIQUE KEY `userEmail` (`userEmail`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data untuk tabel `users`
+--
+
+INSERT INTO `users` (`userId`, `userName`, `userEmail`, `userPass`) VALUES
+(1, 'Sandi', 'sandi@gmail.com', '123456');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
