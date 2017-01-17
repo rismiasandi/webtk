@@ -20,8 +20,10 @@ include ('koneksi.php');
 		  <option value="id_kelas">ID Kelas</option>
       </select>
     <input name="tcari" type="text" id="txt_cari">
-    <input name="bcari" type="submit" value="Cari"></center>
-	</p>
+    <input name="bcari" type="submit" value="Cari"> 
+						</center> <input name="bcari" type="submit" value="urutkan"></center>
+	
+						</p>
 
     
 	
