@@ -2,7 +2,7 @@
 @session_start(); 
 	if(isset($_POST['Submit'])){
 		
-		$logins = array('Habibi' => '123456','username' => 'password','username2' => 'password2');
+		$logins = array('Rizal' => '54321','username' => 'password','username2' => 'password2');
 		
 
 		$Username = isset($_POST['Username']) ? $_POST['Username'] : '';
